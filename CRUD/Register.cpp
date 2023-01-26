@@ -74,5 +74,6 @@ void Register::tccRegister() {
 
     TCC newTCC(newStudent, newAdvisor, newFrequency, newEvaluator, newDetails);
     ListTCC.push_back(newTCC);
-
+    RegistrationsHistory registrationsHistory;
+    registrationsHistory.addInHistory(newTCC);
 }

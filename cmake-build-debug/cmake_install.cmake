@@ -1,4 +1,4 @@
-# Install script for directory: D:/UFC/3 semestre/POO/SistemaDeTCC
+# Install script for directory: C:/Users/Caio/programacao/C++/SistemaDeTCC
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/UFC/3 semestre/POO/SistemaDeTCC/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

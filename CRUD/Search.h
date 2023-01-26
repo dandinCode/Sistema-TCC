@@ -12,7 +12,9 @@ class Search : public TCC {
 private:
     string title;
 public:
-    TCC searchTCC();
+    TCC searchTCC(string title);
+    bool valideSearch(string title);
+    string selectTitle();
     int searchTCCPosition(string title);
 
 

@@ -1,3 +1,3 @@
-D:/UFC/3 semestre/POO/SistemaDeTCC/cmake-build-debug/CMakeFiles/SistemaDeTCC.dir
-D:/UFC/3 semestre/POO/SistemaDeTCC/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/UFC/3 semestre/POO/SistemaDeTCC/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/CMakeFiles/SistemaDeTCC.dir
+C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/CMakeFiles/rebuild_cache.dir

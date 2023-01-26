@@ -6,6 +6,7 @@
 #define SISTEMADETCC_REGISTER_H
 
 #include "../Data/TCC.h"
+#include "../RegistrationsHistory.h"
 
 class Register : public TCC {
 public:

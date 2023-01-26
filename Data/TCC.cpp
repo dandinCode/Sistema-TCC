@@ -6,6 +6,7 @@
 
 TCC::TCC(){
 }
+
 TCC::TCC(Student student, Advisor advisor, Frequency frequency, Evaluator evaluator, Details details){
     this->student = student;
     this->advisor = advisor;

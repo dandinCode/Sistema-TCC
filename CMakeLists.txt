@@ -30,4 +30,7 @@ add_executable(SistemaDeTCC
         CRUD/Update.cpp
         CRUD/Update.h
         CRUD/View.cpp
-        CRUD/View.h)
+        CRUD/View.h
+        RegistrationsHistory.cpp
+        RegistrationsHistory.h
+        RegistrationsHistory.txt)

@@ -75,8 +75,14 @@ void View::printTCC(TCC banca){
 void View::viewTCC(){
     Search search;
     TCC tcc;
-    tcc = search.searchTCC();
-    printTCC(tcc);
+    string title = search.selectTitle();
+
+    if(search.valideSearch(title)){
+        tcc = search.searchTCC(title);
+        printTCC(tcc);
+    } else{
+        cout << "TCC inexistente!" << endl;
+    }
 }
 
 void View::viewAllTCC(){

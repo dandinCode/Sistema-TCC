@@ -42,63 +42,83 @@ void Update::valideOption(int option) {
 void Update::editStudent(){
     Search search;
     Register studentUpdate;
+    string title = search.selectTitle();
+    if (search.valideSearch(title)){
+        TCC tcc = search.searchTCC(title);
+        int position = search.searchTCCPosition(tcc.getDetails().getTitle());
+        tcc.setStudent(studentUpdate.studentRegister());
 
-    TCC tcc = search.searchTCC();
-    int position = search.searchTCCPosition(tcc.getDetails().getTitle());
-    tcc.setStudent(studentUpdate.studentRegister());
+        ListTCC.erase(ListTCC.begin()+position);
+        ListTCC.insert(ListTCC.begin() + position, tcc);
+    } else{
+        cout << "TCC inexistente!" << endl;
+    }
 
-    ListTCC.erase(ListTCC.begin()+position);
-
-    ListTCC.insert(ListTCC.begin() + position, tcc);
 }
 
 void Update::editAdvisor(){
     Search search;
     Register advisorUpdate;
+    string title = search.selectTitle();
 
-    TCC tcc = search.searchTCC();
-    int position = search.searchTCCPosition(tcc.getDetails().getTitle());
-    tcc.setAdvisor(advisorUpdate.advisorRegister());
+    if(search.valideSearch(title)){
+        TCC tcc = search.searchTCC(title);
+        int position = search.searchTCCPosition(tcc.getDetails().getTitle());
+        tcc.setAdvisor(advisorUpdate.advisorRegister());
 
-    ListTCC.erase(ListTCC.begin()+position);
-
-    ListTCC.insert(ListTCC.begin() + position, tcc);
+        ListTCC.erase(ListTCC.begin()+position);
+        ListTCC.insert(ListTCC.begin() + position, tcc);
+    } else{
+        cout << "TCC inexistente!" << endl;
+    }
 }
 
 void Update::editFrequency(){
     Search search;
     Register frequencyUpdate;
+    string title = search.selectTitle();
 
-    TCC tcc = search.searchTCC();
-    int position = search.searchTCCPosition(tcc.getDetails().getTitle());
-    tcc.setFrequency(frequencyUpdate.frequencyRegister());
+    if(search.valideSearch(title)){
+        TCC tcc = search.searchTCC(title);
+        int position = search.searchTCCPosition(tcc.getDetails().getTitle());
+        tcc.setFrequency(frequencyUpdate.frequencyRegister());
 
-    ListTCC.erase(ListTCC.begin()+position);
-
-    ListTCC.insert(ListTCC.begin() + position, tcc);
+        ListTCC.erase(ListTCC.begin()+position);
+        ListTCC.insert(ListTCC.begin() + position, tcc);
+    } else{
+        cout << "TCC inexistente!" << endl;
+    }
 }
 
 void Update::editEvaluator(){
     Search search;
     Register evaluatorUpdate;
+    string title = search.selectTitle();
 
-    TCC tcc = search.searchTCC();
-    int position = search.searchTCCPosition(tcc.getDetails().getTitle());
-    tcc.setEvaluator(evaluatorUpdate.evaluatorRegister());
+    if(search.valideSearch(title)){
+        TCC tcc = search.searchTCC(title);
+        int position = search.searchTCCPosition(tcc.getDetails().getTitle());
+        tcc.setEvaluator(evaluatorUpdate.evaluatorRegister());
 
-    ListTCC.erase(ListTCC.begin()+position);
-
-    ListTCC.insert(ListTCC.begin() + position, tcc);
+        ListTCC.erase(ListTCC.begin()+position);
+        ListTCC.insert(ListTCC.begin() + position, tcc);
+    } else{
+        cout << "TCC inexistente!" << endl;
+    }
 }
 void Update::editDetails(){
     Search search;
     Register detailsUpdate;
+    string title = search.selectTitle();
 
-    TCC tcc = search.searchTCC();
-    int position = search.searchTCCPosition(tcc.getDetails().getTitle());
-    tcc.setDetails(detailsUpdate.detailsRegister());
+    if(search.valideSearch(title)){
+        TCC tcc = search.searchTCC(title);
+        int position = search.searchTCCPosition(tcc.getDetails().getTitle());
+        tcc.setDetails(detailsUpdate.detailsRegister());
 
-    ListTCC.erase(ListTCC.begin()+position);
-
-    ListTCC.insert(ListTCC.begin() + position, tcc);
+        ListTCC.erase(ListTCC.begin()+position);
+        ListTCC.insert(ListTCC.begin() + position, tcc);
+    } else{
+        cout << "TCC inexistente!" << endl;
+    }
 }

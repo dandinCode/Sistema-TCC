@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="SistemaDeTCC"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SistemaDeTCC">
+				<Option output="C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/SistemaDeTCC.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/Caio/programacao/C++/SistemaDeTCC/."/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/mingw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/Makefile&quot;  VERBOSE=1 SistemaDeTCC"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SistemaDeTCC/fast">
+				<Option output="C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/SistemaDeTCC.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/Caio/programacao/C++/SistemaDeTCC/."/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.2.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/mingw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/Makefile&quot;  VERBOSE=1 SistemaDeTCC/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Caio/programacao/C++/SistemaDeTCC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/CRUD/Delete.cpp">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/CRUD/Delete.h">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/CRUD/Register.cpp">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/CRUD/Register.h">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/CRUD/Search.cpp">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/CRUD/Search.h">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/CRUD/Update.cpp">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/CRUD/Update.h">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/CRUD/View.cpp">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/CRUD/View.h">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/Data/Advisor.cpp">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/Data/Advisor.h">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/Data/Details.cpp">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/Data/Details.h">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/Data/Evaluator.cpp">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/Data/Evaluator.h">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/Data/Frequency.cpp">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/Data/Frequency.h">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/Data/Student.cpp">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/Data/Student.h">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/Data/TCC.cpp">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/Data/TCC.h">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/Menu.cpp">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/Menu.h">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/RegistrationsHistory.cpp">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/RegistrationsHistory.h">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/RegistrationsHistory.txt">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/main.cpp">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
