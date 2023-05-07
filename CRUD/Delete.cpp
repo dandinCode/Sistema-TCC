@@ -4,20 +4,35 @@
 
 #include "Delete.h"
 
-Delete::Delete() {
-    cout << "Digite o nome do TCC que deseja excluir: " << endl;
-}
-
 void Delete::selectTCC() {
-    cin >> title;
-    deleteTCC(title);
+    Search search;
+    title = search.selectTitle();
+    json jsonData = getJsonArray();
+
+    if(search.valideSearch(title)){
+        deleteTCC(jsonData);
+    }   else{
+        cout << "TCC inexistente!" << endl;
+    }
+
+    ofstream outFile("../JSON/tccDATA.json");
+    outFile << setw(4) << jsonData << endl;
+    outFile.close();
 }
 
-void Delete::deleteTCC(string title) {
-    for(int i = 0; i < ListTCC.size(); i++) {
-        if(ListTCC[i].getDetails().getTitle() == title){
-            ListTCC.erase(ListTCC.begin()+i);
+void Delete::deleteTCC(json& jsonData){
+    for(int i = 0; i < jsonData.size(); i++) {
+        if(jsonData[i]["Dados da banca"]["Titulo do TCC"] == title){
+            if (jsonData[i].is_object()) {
+                jsonData[i] = json::array({ jsonData[i] });
+            }
+            jsonData.erase(jsonData.begin() + i);
             cout << "TCC deletado!" << endl;
         }
     }
+}
+
+json Delete::getJsonArray() {
+    ManipulateJson manipulateJson;
+    return manipulateJson.getJsonArray();
 }

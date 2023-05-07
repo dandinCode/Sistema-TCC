@@ -6,15 +6,15 @@
 #define SISTEMADETCC_DELETE_H
 
 #include "../Data/TCC.h"
-#include "Update.h"
+#include "Search.h"
 
 class Delete : public TCC{
 private:
     string title;
 public:
-    Delete();
     void selectTCC();
-    void deleteTCC(string title);
+    void deleteTCC(json& jsonData);
+    json getJsonArray();
 };
 
 

@@ -30,64 +30,66 @@ void View::valideOption(int option) {
     }
 }
 
-void View::printStudent(TCC banca){
+void View::printStudent(const json& jsonObj){
     cout << " - Aluno -" << endl;
-    cout << " | Nome: " << banca.getStudent().getName();
-    cout << " | Matricula: " << banca.getStudent().getMatricula();
-    cout << " | Curso: " << banca.getStudent().getCourse();
-    cout << " | E-mail: " << banca.getStudent().getEmail() << " |\n" << endl;
+    cout << " | Nome: " << jsonObj["Dados do estudante"]["Nome do aluno"];
+    cout << " | Matricula: " << jsonObj["Dados do estudante"]["Enrollment"];
+    cout << " | Curso: " << jsonObj["Dados do estudante"]["Curso"];
+    cout << " | E-mail: " << jsonObj["Dados do estudante"]["E-mail"] << " |\n" << endl;
 }
 
-void View::printAdvisor(TCC banca){
+void View::printAdvisor(const json& jsonObj){
     cout << " - Orientador - " << endl;
-    cout << " | Nome: " << banca.getAdvisor().getName() << " |\n" << endl;
+    cout << " | Nome: " << jsonObj["Orientador"]["Orientador"] << " |\n" << endl;
 }
 
-void View::printFrequency(TCC banca){
+void View::printFrequency(const json& jsonObj){
     cout << " - Frequencia - " << endl;
-    cout << " | Porcentagem: " << banca.getFrequency().getPercentage() << " |\n" << endl;
+    cout << " | Frequencia: " << jsonObj["Frequencia"]["Frequencia"] << " |\n" << endl;
 }
 
-void View::printEvaluator(TCC banca){
+void View::printEvaluator(const json& jsonObj){
     cout << " - Avaliador - " << endl;
-    cout << " | Nome: " << banca.getEvaluator().getName();
-    cout << " | Instituicao: " << banca.getEvaluator().getInstitutes();
-    cout << " | E-mail: " << banca.getEvaluator().getEmail() << " |\n" << endl;
+    cout << " | Nome: " << jsonObj["Banca avaliadora"]["Nome do avaliador"];
+    cout << " | Instituicao: " << jsonObj["Banca avaliadora"]["Instituicao"];
+    cout << " | E-mail: " << jsonObj["Banca avaliadora"]["E-mail do avaliador"] << " |\n" << endl;
 }
 
-void View::printDetails(TCC banca){
+void View::printDetails(const json& jsonObj){
     cout << " - Detalhes da Banca - " << endl;
-    cout << " | Title: " << banca.getDetails().getTitle();
-    cout << " | Resumo: " << banca.getDetails().getAbstract();
-    cout << " | Horario: " << banca.getDetails().getTime();
-    cout << " | Local: " << banca.getDetails().getLocal() << " |\n" << endl;
+    cout << " | Title: " << jsonObj["Dados da banca"]["Titulo do TCC"];
+    cout << " | Resumo: " << jsonObj["Dados da banca"]["Resumo do TCC"];
+    cout << " | Horario: " << jsonObj["Dados da banca"]["Horario da defesa"];
+    cout << " | Local: " << jsonObj["Dados da banca"]["Local da defesa"] << " |\n" << endl;
 }
 
-void View::printTCC(TCC banca){
+void View::printTCC(const json& jsonObj){
     cout << "------------------------------------------------" << endl;
-    printStudent(banca);
-    printAdvisor(banca);
-    printFrequency(banca);
-    printEvaluator(banca);
-    printDetails(banca);
+    printStudent(jsonObj);
+    printAdvisor(jsonObj);
+    printFrequency(jsonObj);
+    printEvaluator(jsonObj);
+    printDetails(jsonObj);
 }
 
 void View::viewTCC(){
     Search search;
-    TCC tcc;
     string title = search.selectTitle();
-
     if(search.valideSearch(title)){
-        tcc = search.searchTCC(title);
-        printTCC(tcc);
-    } else{
+        printTCC(search.searchTCC(title));
+    }   else{
         cout << "TCC inexistente!" << endl;
     }
 }
 
 void View::viewAllTCC(){
-    cout<<" Trabalhos registrados:\n"<<endl;
-    for (int i = 0; i<ListTCC.size(); i++) {
-        printTCC(ListTCC [i]);
+    json jsonData = getJsonArray();
+    for (int i = 0; i<jsonData.size(); i++){
+        printTCC(jsonData[i]);
     }
+}
+
+json View::getJsonArray() {
+    ManipulateJson manipulateJson;
+    return manipulateJson.getJsonArray();
 }

@@ -9,6 +9,7 @@
 
 #include "Data/TCC.h"
 
+
 class RegistrationsHistory {
 public:
     void addInHistory(TCC tcc);

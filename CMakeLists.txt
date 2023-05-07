@@ -31,6 +31,9 @@ add_executable(SistemaDeTCC
         CRUD/Update.h
         CRUD/View.cpp
         CRUD/View.h
+        JSON/ManipulateJson.cpp
+        JSON/ManipulateJson.h
         RegistrationsHistory.cpp
         RegistrationsHistory.h
+
         )

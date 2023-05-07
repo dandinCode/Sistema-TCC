@@ -19,23 +19,24 @@ void Menu::chooseOption() {
 }
 
 void Menu::valideOption(int option) {
-    TCC newTCC;
+    ManipulateJson manipulateJson;
+    json jsonData = manipulateJson.getJsonArray();
     if(option == 1){
         tccRegister();
     } else if(option == 2){
-        if (newTCC.listSize() != 0) {
+        if (!jsonData.empty()) {
             tccView();
         } else {
             cout << "Nenhum TCC cadastrado ainda!" << endl;
         }
     } else if(option == 3){
-        if (newTCC.listSize() != 0) {
+        if (!jsonData.empty()){
             tccUpdate();
         } else {
             cout << "Nenhum TCC cadastrado ainda!" << endl;
         }
     } else if(option == 4){
-        if (newTCC.listSize() != 0) {
+        if (!jsonData.empty()){
             tccDelete();
         } else {
             cout << "Nenhum TCC cadastrado ainda!" << endl;

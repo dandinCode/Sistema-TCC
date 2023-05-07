@@ -392,6 +392,30 @@ Data/TCC.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SistemaDeTCC.dir\build.make CMakeFiles/SistemaDeTCC.dir/Data/TCC.cpp.s
 .PHONY : Data/TCC.cpp.s
 
+JSON/ManipulateJson.obj: JSON/ManipulateJson.cpp.obj
+.PHONY : JSON/ManipulateJson.obj
+
+# target to build an object file
+JSON/ManipulateJson.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SistemaDeTCC.dir\build.make CMakeFiles/SistemaDeTCC.dir/JSON/ManipulateJson.cpp.obj
+.PHONY : JSON/ManipulateJson.cpp.obj
+
+JSON/ManipulateJson.i: JSON/ManipulateJson.cpp.i
+.PHONY : JSON/ManipulateJson.i
+
+# target to preprocess a source file
+JSON/ManipulateJson.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SistemaDeTCC.dir\build.make CMakeFiles/SistemaDeTCC.dir/JSON/ManipulateJson.cpp.i
+.PHONY : JSON/ManipulateJson.cpp.i
+
+JSON/ManipulateJson.s: JSON/ManipulateJson.cpp.s
+.PHONY : JSON/ManipulateJson.s
+
+# target to generate assembly for a file
+JSON/ManipulateJson.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SistemaDeTCC.dir\build.make CMakeFiles/SistemaDeTCC.dir/JSON/ManipulateJson.cpp.s
+.PHONY : JSON/ManipulateJson.cpp.s
+
 Menu.obj: Menu.cpp.obj
 .PHONY : Menu.obj
 
@@ -506,6 +530,9 @@ help:
 	@echo ... Data/TCC.obj
 	@echo ... Data/TCC.i
 	@echo ... Data/TCC.s
+	@echo ... JSON/ManipulateJson.obj
+	@echo ... JSON/ManipulateJson.i
+	@echo ... JSON/ManipulateJson.s
 	@echo ... Menu.obj
 	@echo ... Menu.i
 	@echo ... Menu.s

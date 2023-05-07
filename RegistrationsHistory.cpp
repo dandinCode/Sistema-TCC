@@ -24,7 +24,7 @@ void RegistrationsHistory::addInHistory(TCC tcc){
 void RegistrationsHistory::addStudent(TCC tcc, ofstream& RegistrationsHistory){
     RegistrationsHistory << "-- Dados do estudante --" << endl;
     RegistrationsHistory << " | Nome: " << tcc.getStudent().getName();
-    RegistrationsHistory << " | Matricula: " << tcc.getStudent().getMatricula();
+    RegistrationsHistory << " | Matricula: " << tcc.getStudent().getEnrollment();
     RegistrationsHistory << " | Curso: " << tcc.getStudent().getCourse();
     RegistrationsHistory << " | E-mail: " << tcc.getStudent().getEmail() << " |\n" << endl;
 }

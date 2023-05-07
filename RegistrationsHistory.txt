@@ -1,0 +1,108 @@
+
+=====================================
+
+-- Dados do estudante --
+ | Nome: Caio | Matricula: 514303 | Curso: ES | E-mail: caiof@gmail.com |
+
+ - Orientador - 
+ | Nome: Leonardo |
+
+ - Frequencia - 
+ | Porcentagem: 98 |
+
+ - Avaliador - 
+ | Nome: Pablo | Instituicao: UFC | E-mail: pablo@ufc.br |
+
+ - Detalhes da Banca - 
+ | Title: Grafos | Resumo: Arestas | Horario: 8h | Local: Russas |
+
+
+=====================================
+
+-- Dados do estudante --
+ | Nome: Breno | Matricula: 890312 | Curso: CC | E-mail: brenin@gmail.com |
+
+ - Orientador - 
+ | Nome: Lorenzo |
+
+ - Frequencia - 
+ | Porcentagem: 89 |
+
+ - Avaliador - 
+ | Nome: Rafael | Instituicao: UFC | E-mail: Crateus |
+
+ - Detalhes da Banca - 
+ | Title: Vasco | Resumo: Colina | Horario: 14h | Local: Crateus |
+
+
+=====================================
+
+-- Dados do estudante --
+ | Nome: Lara | Matricula: 983129 | Curso: CC | E-mail: larinha@gmail.com |
+
+ - Orientador - 
+ | Nome: Alexandre |
+
+ - Frequencia - 
+ | Porcentagem: 87 |
+
+ - Avaliador - 
+ | Nome: Rafael | Instituicao: UFC | E-mail: rafa@ufc.br |
+
+ - Detalhes da Banca - 
+ | Title: Novatos | Resumo: Love | Horario: 13h | Local: Russas |
+
+
+=====================================
+
+-- Dados do estudante --
+ | Nome: Reginaldo | Matricula: 673183 | Curso: Mecanica | E-mail: refex@gmail.com |
+
+ - Orientador - 
+ | Nome: Orlando |
+
+ - Frequencia - 
+ | Porcentagem: 77 |
+
+ - Avaliador - 
+ | Nome: Juliana | Instituicao: UFMG | E-mail: ju@ufgm.br |
+
+ - Detalhes da Banca - 
+ | Title: Carros | Resumo: F1 | Horario: 11h | Local: Ubatuba |
+
+
+=====================================
+
+-- Dados do estudante --
+ | Nome: Luis | Matricula: 784112 | Curso: Civil | E-mail: luis@gmail.com |
+
+ - Orientador - 
+ | Nome: Livia |
+
+ - Frequencia - 
+ | Porcentagem: 92 |
+
+ - Avaliador - 
+ | Nome: Laura | Instituicao: UFC | E-mail: laura@ufc.br |
+
+ - Detalhes da Banca - 
+ | Title: Casas | Resumo: Paredes | Horario: 15h | Local: Fortaleza |
+
+
+=====================================
+
+-- Dados do estudante --
+ | Nome: Marlene | Matricula: 783193 | Curso: Civil | E-mail: mar@gmail.com |
+
+ - Orientador - 
+ | Nome: Lorraine |
+
+ - Frequencia - 
+ | Porcentagem: 90 |
+
+ - Avaliador - 
+ | Nome: Cesar | Instituicao: UFC | E-mail: cesar@ufc.br |
+
+ - Detalhes da Banca - 
+ | Title: Energia | Resumo: Fios | Horario: 8h | Local: Fortaleza |
+

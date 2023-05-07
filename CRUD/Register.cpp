@@ -5,17 +5,17 @@
 #include "Register.h"
 
 Student Register::studentRegister(){
-    string nameStudent, matricula, course, emailStudent;
+    string nameStudent, enrollment, course, emailStudent;
     cout << "Digite seu nome: " << endl;
     cin >> nameStudent;
     cout << "Digite sua Matricula: " << endl;
-    cin >> matricula;
+    cin >> enrollment;
     cout << "Digite se curso: " << endl;
     cin >> course;
     cout << "Digite seu email: " << endl;
     cin >> emailStudent;
 
-    Student newStudent(nameStudent, matricula, course, emailStudent);
+    Student newStudent(nameStudent, enrollment, course, emailStudent);
     return newStudent;
 }
 Advisor Register::advisorRegister(){
@@ -73,9 +73,10 @@ void Register::tccRegister() {
     Details newDetails = detailsRegister();
 
     TCC newTCC(newStudent, newAdvisor, newFrequency, newEvaluator, newDetails);
-    ListTCC.push_back(newTCC);
 
     RegistrationsHistory registrationsHistory;
     registrationsHistory.addInHistory(newTCC);
 
+    ManipulateJson manipulateJson;
+    manipulateJson.saveDataInJson(newTCC);
 }

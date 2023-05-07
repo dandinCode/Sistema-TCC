@@ -19,6 +19,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Caio/programacao/C++/SistemaDeTCC/Data/Frequency.cpp" "CMakeFiles/SistemaDeTCC.dir/Data/Frequency.cpp.obj" "gcc" "CMakeFiles/SistemaDeTCC.dir/Data/Frequency.cpp.obj.d"
   "C:/Users/Caio/programacao/C++/SistemaDeTCC/Data/Student.cpp" "CMakeFiles/SistemaDeTCC.dir/Data/Student.cpp.obj" "gcc" "CMakeFiles/SistemaDeTCC.dir/Data/Student.cpp.obj.d"
   "C:/Users/Caio/programacao/C++/SistemaDeTCC/Data/TCC.cpp" "CMakeFiles/SistemaDeTCC.dir/Data/TCC.cpp.obj" "gcc" "CMakeFiles/SistemaDeTCC.dir/Data/TCC.cpp.obj.d"
+  "C:/Users/Caio/programacao/C++/SistemaDeTCC/JSON/ManipulateJson.cpp" "CMakeFiles/SistemaDeTCC.dir/JSON/ManipulateJson.cpp.obj" "gcc" "CMakeFiles/SistemaDeTCC.dir/JSON/ManipulateJson.cpp.obj.d"
   "C:/Users/Caio/programacao/C++/SistemaDeTCC/Menu.cpp" "CMakeFiles/SistemaDeTCC.dir/Menu.cpp.obj" "gcc" "CMakeFiles/SistemaDeTCC.dir/Menu.cpp.obj.d"
   "C:/Users/Caio/programacao/C++/SistemaDeTCC/RegistrationsHistory.cpp" "CMakeFiles/SistemaDeTCC.dir/RegistrationsHistory.cpp.obj" "gcc" "CMakeFiles/SistemaDeTCC.dir/RegistrationsHistory.cpp.obj.d"
   "C:/Users/Caio/programacao/C++/SistemaDeTCC/main.cpp" "CMakeFiles/SistemaDeTCC.dir/main.cpp.obj" "gcc" "CMakeFiles/SistemaDeTCC.dir/main.cpp.obj.d"

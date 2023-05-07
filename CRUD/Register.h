@@ -7,6 +7,7 @@
 
 #include "../Data/TCC.h"
 #include "../RegistrationsHistory.h"
+#include "../JSON/ManipulateJson.h"
 
 class Register : public TCC {
 public:

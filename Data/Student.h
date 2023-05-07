@@ -13,16 +13,16 @@ using namespace std;
 class Student {
 private:
     string name;
-    string matricula;
+    string enrollment;
     string course;
     string email;
 public:
     Student();
-    Student(string name, string matricula, string course, string email);
+    Student(string name, string enrollment, string course, string email);
     string getName();
     void setName(string name);
-    string getMatricula();
-    void setMatricula(string matricula);
+    string getEnrollment();
+    void setEnrollment(string enrollment);
     string getCourse();
     void setCourse(string course);
     string getEmail();

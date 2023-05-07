@@ -7,9 +7,9 @@
 
 Student::Student() {
 }
-Student::Student(string name, string matricula, string course, string email){
+Student::Student(string name, string enrollment, string course, string email){
     this->name = name;
-    this->matricula = matricula;
+    this->enrollment = enrollment;
     this->course = course;
     this->email = email;
 }
@@ -19,11 +19,11 @@ string Student::getName(){
 void Student::setName(string name){
     this->name = name;
 }
-string Student::getMatricula(){
-    return matricula;
+string Student::getEnrollment(){
+    return enrollment;
 }
-void Student::setMatricula(string matricula){
-    this->matricula = matricula;
+void Student::setEnrollment(string enrollment){
+    this->enrollment = enrollment;
 }
 string Student::getCourse(){
     return course;

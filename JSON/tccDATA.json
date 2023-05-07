@@ -1,0 +1,127 @@
+[
+    {
+        "Dados do estudante": {
+            "Nome do aluno": "Caio",
+            "Enrollment": "514303",
+            "Curso": "ES",
+            "E-mail": "caiof@gmail.com"
+        },
+        "Orientador": {
+            "Orientador": "Leonardo"
+        },
+        "Frequencia": {
+            "Frequencia": 98.0
+        },
+        "Banca avaliadora": {
+            "Nome do avaliador": "Pablo",
+            "Instituicao": "UFC",
+            "E-mail do avaliador": "pablo@ufc.br"
+        },
+        "Dados da banca": {
+            "Titulo do TCC": "Grafos",
+            "Resumo do TCC": "Arestas",
+            "Horario da defesa": "8h",
+            "Local da defesa": "Russas"
+        }
+    },
+    {
+        "Dados do estudante": {
+            "Nome do aluno": "Breno",
+            "Enrollment": "890312",
+            "Curso": "CC",
+            "E-mail": "brenin@gmail.com"
+        },
+        "Orientador": {
+            "Orientador": "Lorenzo"
+        },
+        "Frequencia": {
+            "Frequencia": 89.0
+        },
+        "Banca avaliadora": {
+            "Nome do avaliador": "Rafael",
+            "Instituicao": "UFC",
+            "E-mail do avaliador": "Crateus"
+        },
+        "Dados da banca": {
+            "Titulo do TCC": "Vasco",
+            "Resumo do TCC": "Colina",
+            "Horario da defesa": "14h",
+            "Local da defesa": "Crateus"
+        }
+    },
+    {
+        "Dados do estudante": {
+            "Nome do aluno": "Reginaldo",
+            "Enrollment": "673183",
+            "Curso": "Mecanica",
+            "E-mail": "refex@gmail.com"
+        },
+        "Orientador": {
+            "Orientador": "Orlando"
+        },
+        "Frequencia": {
+            "Frequencia": 77.0
+        },
+        "Banca avaliadora": {
+            "Nome do avaliador": "Juliana",
+            "Instituicao": "UFMG",
+            "E-mail do avaliador": "ju@ufgm.br"
+        },
+        "Dados da banca": {
+            "Titulo do TCC": "Carros",
+            "Resumo do TCC": "F1",
+            "Horario da defesa": "11h",
+            "Local da defesa": "Ubatuba"
+        }
+    },
+    {
+        "Dados do estudante": {
+            "Nome do aluno": "Luis",
+            "Enrollment": "784112",
+            "Curso": "Civil",
+            "E-mail": "luis@gmail.com"
+        },
+        "Orientador": {
+            "Orientador": "Livia"
+        },
+        "Frequencia": {
+            "Frequencia": 92.0
+        },
+        "Banca avaliadora": {
+            "Nome do avaliador": "Laura",
+            "Instituicao": "UFC",
+            "E-mail do avaliador": "laura@ufc.br"
+        },
+        "Dados da banca": {
+            "Titulo do TCC": "Casas",
+            "Resumo do TCC": "Paredes",
+            "Horario da defesa": "15h",
+            "Local da defesa": "Fortaleza"
+        }
+    },
+    {
+        "Dados do estudante": {
+            "Nome do aluno": "Marlene",
+            "Enrollment": "783193",
+            "Curso": "Civil",
+            "E-mail": "mar@gmail.com"
+        },
+        "Orientador": {
+            "Orientador": "Lorraine"
+        },
+        "Frequencia": {
+            "Frequencia": 90.0
+        },
+        "Banca avaliadora": {
+            "Nome do avaliador": "Cesar",
+            "Instituicao": "UFC",
+            "E-mail do avaliador": "cesar@ufc.br"
+        },
+        "Dados da banca": {
+            "Titulo do TCC": "Energia",
+            "Resumo do TCC": "Fios",
+            "Horario da defesa": "8h",
+            "Local da defesa": "Fortaleza"
+        }
+    }
+]

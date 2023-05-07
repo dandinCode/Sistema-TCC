@@ -17,20 +17,21 @@ Update::Update() {
 void Update::chooseOption() {
     cout << "Digite a opcao desejada: " << endl;
     cin >> option;
-    valideOption(option);
+    editJsonFile(option);
+
 }
 
-void Update::valideOption(int option) {
+void Update::valideOption(int option, json& jsonData, string title, ManipulateJson manipulateJson) {
     if(option == 1){
-        editStudent();
+        editStudent(jsonData, title, manipulateJson);
     } else if(option == 2){
-        editAdvisor();
+        editAdvisor(jsonData, title, manipulateJson);
     } else if(option == 3){
-        editFrequency();
+        editFrequency(jsonData, title, manipulateJson);
     } else if(option == 4){
-        editEvaluator();
+        editEvaluator(jsonData, title, manipulateJson);
     } else if(option == 5){
-        editDetails();
+        editDetails(jsonData, title, manipulateJson);
     } else if (option == 0){
         Menu menu;
         menu.chooseOption();
@@ -39,86 +40,73 @@ void Update::valideOption(int option) {
     }
 }
 
-void Update::editStudent(){
+void Update::editJsonFile(int option){
     Search search;
+    ManipulateJson manipulateJson;
+    string title = search.selectTitle();
+    json jsonData = getJsonArray();
+
+    if(search.valideSearch(title)){
+        valideOption(option, jsonData, title, manipulateJson);
+    }   else{
+        cout << "TCC inexistente!" << endl;
+    }
+
+
+    ofstream outFile("../JSON/tccDATA.json");
+    if (!outFile.is_open()) {
+        std::cout << "Erro ao abrir o arquivo JSON para escrita." << std::endl;
+    }
+    outFile << setw(4) << jsonData;
+    outFile.close();
+}
+
+void Update::editStudent(json& jsonData, string title, ManipulateJson manipulateJson){
     Register studentUpdate;
-    string title = search.selectTitle();
-    if (search.valideSearch(title)){
-        TCC tcc = search.searchTCC(title);
-        int position = search.searchTCCPosition(tcc.getDetails().getTitle());
-        tcc.setStudent(studentUpdate.studentRegister());
-
-        ListTCC.erase(ListTCC.begin()+position);
-        ListTCC.insert(ListTCC.begin() + position, tcc);
-    } else{
-        cout << "TCC inexistente!" << endl;
+    for (int i = 0; i<jsonData.size(); i++){
+        if (jsonData[i]["Dados da banca"]["Titulo do TCC"] == title){
+            jsonData[i]["Dados do estudante"] = manipulateJson.convertStudentToJson(studentUpdate.studentRegister());
+        }
     }
-
 }
 
-void Update::editAdvisor(){
-    Search search;
+void Update::editAdvisor(json& jsonData, string title, ManipulateJson manipulateJson){
     Register advisorUpdate;
-    string title = search.selectTitle();
-
-    if(search.valideSearch(title)){
-        TCC tcc = search.searchTCC(title);
-        int position = search.searchTCCPosition(tcc.getDetails().getTitle());
-        tcc.setAdvisor(advisorUpdate.advisorRegister());
-
-        ListTCC.erase(ListTCC.begin()+position);
-        ListTCC.insert(ListTCC.begin() + position, tcc);
-    } else{
-        cout << "TCC inexistente!" << endl;
+    for (int i = 0; i<jsonData.size(); i++){
+        if (jsonData[i]["Dados da banca"]["Titulo do TCC"] == title){
+            jsonData[i]["Orientador"] = manipulateJson.convertAdvisorToJson(advisorUpdate.advisorRegister());
+        }
     }
 }
 
-void Update::editFrequency(){
-    Search search;
+void Update::editFrequency(json& jsonData, string title, ManipulateJson manipulateJson){
     Register frequencyUpdate;
-    string title = search.selectTitle();
-
-    if(search.valideSearch(title)){
-        TCC tcc = search.searchTCC(title);
-        int position = search.searchTCCPosition(tcc.getDetails().getTitle());
-        tcc.setFrequency(frequencyUpdate.frequencyRegister());
-
-        ListTCC.erase(ListTCC.begin()+position);
-        ListTCC.insert(ListTCC.begin() + position, tcc);
-    } else{
-        cout << "TCC inexistente!" << endl;
+    for (int i = 0; i<jsonData.size(); i++){
+        if (jsonData[i]["Dados da banca"]["Titulo do TCC"] == title){
+            jsonData[i]["Frequencia"] = manipulateJson.convertFrequencyToJson(frequencyUpdate.frequencyRegister());
+        }
     }
 }
 
-void Update::editEvaluator(){
-    Search search;
+void Update::editEvaluator(json& jsonData, string title, ManipulateJson manipulateJson){
     Register evaluatorUpdate;
-    string title = search.selectTitle();
-
-    if(search.valideSearch(title)){
-        TCC tcc = search.searchTCC(title);
-        int position = search.searchTCCPosition(tcc.getDetails().getTitle());
-        tcc.setEvaluator(evaluatorUpdate.evaluatorRegister());
-
-        ListTCC.erase(ListTCC.begin()+position);
-        ListTCC.insert(ListTCC.begin() + position, tcc);
-    } else{
-        cout << "TCC inexistente!" << endl;
+    for (int i = 0; i<jsonData.size(); i++){
+        if (jsonData[i]["Dados da banca"]["Titulo do TCC"] == title){
+            jsonData[i]["Banca avaliadora"] = manipulateJson.convertEvaluatorToJson(evaluatorUpdate.evaluatorRegister());
+        }
     }
 }
-void Update::editDetails(){
-    Search search;
+
+void Update::editDetails(json& jsonData, string title, ManipulateJson manipulateJson){
     Register detailsUpdate;
-    string title = search.selectTitle();
-
-    if(search.valideSearch(title)){
-        TCC tcc = search.searchTCC(title);
-        int position = search.searchTCCPosition(tcc.getDetails().getTitle());
-        tcc.setDetails(detailsUpdate.detailsRegister());
-
-        ListTCC.erase(ListTCC.begin()+position);
-        ListTCC.insert(ListTCC.begin() + position, tcc);
-    } else{
-        cout << "TCC inexistente!" << endl;
+    for (int i = 0; i<jsonData.size(); i++){
+        if (jsonData[i]["Dados da banca"]["Titulo do TCC"] == title){
+            jsonData[i]["Dados da banca"] = manipulateJson.convertDetailsToJson(detailsUpdate.detailsRegister());
+        }
     }
+}
+
+json Update::getJsonArray() {
+    ManipulateJson manipulateJson;
+    return manipulateJson.getJsonArray();
 }

@@ -23,7 +23,6 @@ private:
     Evaluator evaluator;
     Details details;
 public:
-    static vector <TCC> ListTCC;
     TCC();
     TCC(Student student, Advisor advisor, Frequency frequency, Evaluator evaluator, Details details);
     Student getStudent();
@@ -36,7 +35,6 @@ public:
     void setFrequency(Frequency frequency);
     void setEvaluator(Evaluator evaluator);
     void setDetails( Details details);
-    int listSize();
 };
 
 

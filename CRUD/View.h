@@ -7,6 +7,7 @@
 
 #include "../Data/TCC.h"
 #include "Search.h"
+#include "../JSON/json.hpp"
 
 class View : public TCC{
 private:
@@ -15,14 +16,15 @@ public:
     View();
     void chooseOption();
     void valideOption(int option);
-    void printStudent(TCC banca);
-    void printAdvisor(TCC banca);
-    void printFrequency(TCC banca);
-    void printEvaluator(TCC banca);
-    void printDetails(TCC banca);
-    void printTCC(TCC banca);
+    void printStudent(const json& jsonObj);
+    void printAdvisor(const json& jsonObj);
+    void printFrequency(const json& jsonObj);
+    void printEvaluator(const json& jsonObj);
+    void printDetails(const json& jsonObj);
+    void printTCC(const json& jsonObj);
     void viewTCC();
     void viewAllTCC();
+    json getJsonArray();
 
 };
 

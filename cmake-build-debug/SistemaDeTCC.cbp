@@ -152,6 +152,12 @@
 		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/Data/TCC.h">
 			<Option target="SistemaDeTCC"/>
 		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/JSON/ManipulateJson.cpp">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
+		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/JSON/ManipulateJson.h">
+			<Option target="SistemaDeTCC"/>
+		</Unit>
 		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/Menu.cpp">
 			<Option target="SistemaDeTCC"/>
 		</Unit>

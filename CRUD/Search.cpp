@@ -4,19 +4,21 @@
 
 #include "Search.h"
 
-TCC Search::searchTCC(string title) {
-    TCC tcc;
-    for(int i = 0; i < ListTCC.size(); i++) {
-        if(ListTCC[i].getDetails().getTitle() == title){
-            tcc = ListTCC[i];
+json Search::searchTCC(string title) {
+    json jsonData = getJsonArray();
+    json tccJsonObj;
+    for (int i = 0; i<jsonData.size(); i++){
+        if (jsonData[i]["Dados da banca"]["Titulo do TCC"] == title){
+            tccJsonObj =  jsonData[i];
         }
     }
-    return tcc;
+    return tccJsonObj;
 }
 
 bool Search::valideSearch(string title){
-    for(int i = 0; i < ListTCC.size(); i++) {
-        if(ListTCC[i].getDetails().getTitle() == title){
+    json jsonData = getJsonArray();
+    for(int i = 0; i < jsonData.size(); i++) {
+        if(jsonData[i]["Dados da banca"]["Titulo do TCC"] == title){
             return true;
         }
     }
@@ -24,17 +26,12 @@ bool Search::valideSearch(string title){
 }
 
 string Search::selectTitle(){
-    cout << "Digite o titulo do trabalho que desejado: " << endl;
+    cout << "Digite o titulo do trabalho: " << endl;
     cin >> title;
     return title;
 }
 
-
-int Search::searchTCCPosition(string title){
-    for(int i = 0; i < ListTCC.size(); i++) {
-        if(ListTCC[i].getDetails().getTitle() == title){
-            return i;
-        }
-    }
-    return -1;
+json Search::getJsonArray() {
+    ManipulateJson manipulateJson;
+    return manipulateJson.getJsonArray();
 }

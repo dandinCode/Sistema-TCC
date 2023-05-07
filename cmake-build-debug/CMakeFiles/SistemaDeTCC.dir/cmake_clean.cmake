@@ -21,6 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SistemaDeTCC.dir/Data/Student.cpp.obj.d"
   "CMakeFiles/SistemaDeTCC.dir/Data/TCC.cpp.obj"
   "CMakeFiles/SistemaDeTCC.dir/Data/TCC.cpp.obj.d"
+  "CMakeFiles/SistemaDeTCC.dir/JSON/ManipulateJson.cpp.obj"
+  "CMakeFiles/SistemaDeTCC.dir/JSON/ManipulateJson.cpp.obj.d"
   "CMakeFiles/SistemaDeTCC.dir/Menu.cpp.obj"
   "CMakeFiles/SistemaDeTCC.dir/Menu.cpp.obj.d"
   "CMakeFiles/SistemaDeTCC.dir/RegistrationsHistory.cpp.obj"

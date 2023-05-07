@@ -54,9 +54,3 @@ Details TCC::getDetails(){
 void TCC::setDetails(Details details){
     this->details = details;
 }
-
-int TCC::listSize(){
-    return ListTCC.size();
-}
-
-vector <TCC> TCC::ListTCC;

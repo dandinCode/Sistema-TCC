@@ -12,10 +12,11 @@ class Search : public TCC {
 private:
     string title;
 public:
-    TCC searchTCC(string title);
+    json searchTCC(string title);
     bool valideSearch(string title);
     string selectTitle();
     int searchTCCPosition(string title);
+    json getJsonArray();
 
 
 };

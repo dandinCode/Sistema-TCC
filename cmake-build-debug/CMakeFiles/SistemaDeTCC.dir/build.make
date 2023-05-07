@@ -263,11 +263,26 @@ CMakeFiles/SistemaDeTCC.dir/CRUD/View.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SistemaDeTCC.dir/CRUD/View.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Caio\programacao\C++\SistemaDeTCC\CRUD\View.cpp -o CMakeFiles\SistemaDeTCC.dir\CRUD\View.cpp.s
 
+CMakeFiles/SistemaDeTCC.dir/JSON/ManipulateJson.cpp.obj: CMakeFiles/SistemaDeTCC.dir/flags.make
+CMakeFiles/SistemaDeTCC.dir/JSON/ManipulateJson.cpp.obj: CMakeFiles/SistemaDeTCC.dir/includes_CXX.rsp
+CMakeFiles/SistemaDeTCC.dir/JSON/ManipulateJson.cpp.obj: ../JSON/ManipulateJson.cpp
+CMakeFiles/SistemaDeTCC.dir/JSON/ManipulateJson.cpp.obj: CMakeFiles/SistemaDeTCC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Caio\programacao\C++\SistemaDeTCC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SistemaDeTCC.dir/JSON/ManipulateJson.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SistemaDeTCC.dir/JSON/ManipulateJson.cpp.obj -MF CMakeFiles\SistemaDeTCC.dir\JSON\ManipulateJson.cpp.obj.d -o CMakeFiles\SistemaDeTCC.dir\JSON\ManipulateJson.cpp.obj -c C:\Users\Caio\programacao\C++\SistemaDeTCC\JSON\ManipulateJson.cpp
+
+CMakeFiles/SistemaDeTCC.dir/JSON/ManipulateJson.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SistemaDeTCC.dir/JSON/ManipulateJson.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Caio\programacao\C++\SistemaDeTCC\JSON\ManipulateJson.cpp > CMakeFiles\SistemaDeTCC.dir\JSON\ManipulateJson.cpp.i
+
+CMakeFiles/SistemaDeTCC.dir/JSON/ManipulateJson.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SistemaDeTCC.dir/JSON/ManipulateJson.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Caio\programacao\C++\SistemaDeTCC\JSON\ManipulateJson.cpp -o CMakeFiles\SistemaDeTCC.dir\JSON\ManipulateJson.cpp.s
+
 CMakeFiles/SistemaDeTCC.dir/RegistrationsHistory.cpp.obj: CMakeFiles/SistemaDeTCC.dir/flags.make
 CMakeFiles/SistemaDeTCC.dir/RegistrationsHistory.cpp.obj: CMakeFiles/SistemaDeTCC.dir/includes_CXX.rsp
 CMakeFiles/SistemaDeTCC.dir/RegistrationsHistory.cpp.obj: ../RegistrationsHistory.cpp
 CMakeFiles/SistemaDeTCC.dir/RegistrationsHistory.cpp.obj: CMakeFiles/SistemaDeTCC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Caio\programacao\C++\SistemaDeTCC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SistemaDeTCC.dir/RegistrationsHistory.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Caio\programacao\C++\SistemaDeTCC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SistemaDeTCC.dir/RegistrationsHistory.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SistemaDeTCC.dir/RegistrationsHistory.cpp.obj -MF CMakeFiles\SistemaDeTCC.dir\RegistrationsHistory.cpp.obj.d -o CMakeFiles\SistemaDeTCC.dir\RegistrationsHistory.cpp.obj -c C:\Users\Caio\programacao\C++\SistemaDeTCC\RegistrationsHistory.cpp
 
 CMakeFiles/SistemaDeTCC.dir/RegistrationsHistory.cpp.i: cmake_force
@@ -293,6 +308,7 @@ SistemaDeTCC_OBJECTS = \
 "CMakeFiles/SistemaDeTCC.dir/Data/TCC.cpp.obj" \
 "CMakeFiles/SistemaDeTCC.dir/CRUD/Update.cpp.obj" \
 "CMakeFiles/SistemaDeTCC.dir/CRUD/View.cpp.obj" \
+"CMakeFiles/SistemaDeTCC.dir/JSON/ManipulateJson.cpp.obj" \
 "CMakeFiles/SistemaDeTCC.dir/RegistrationsHistory.cpp.obj"
 
 # External object files for target SistemaDeTCC
@@ -311,12 +327,13 @@ SistemaDeTCC.exe: CMakeFiles/SistemaDeTCC.dir/Data/Student.cpp.obj
 SistemaDeTCC.exe: CMakeFiles/SistemaDeTCC.dir/Data/TCC.cpp.obj
 SistemaDeTCC.exe: CMakeFiles/SistemaDeTCC.dir/CRUD/Update.cpp.obj
 SistemaDeTCC.exe: CMakeFiles/SistemaDeTCC.dir/CRUD/View.cpp.obj
+SistemaDeTCC.exe: CMakeFiles/SistemaDeTCC.dir/JSON/ManipulateJson.cpp.obj
 SistemaDeTCC.exe: CMakeFiles/SistemaDeTCC.dir/RegistrationsHistory.cpp.obj
 SistemaDeTCC.exe: CMakeFiles/SistemaDeTCC.dir/build.make
 SistemaDeTCC.exe: CMakeFiles/SistemaDeTCC.dir/linklibs.rsp
 SistemaDeTCC.exe: CMakeFiles/SistemaDeTCC.dir/objects1.rsp
 SistemaDeTCC.exe: CMakeFiles/SistemaDeTCC.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Caio\programacao\C++\SistemaDeTCC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable SistemaDeTCC.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Caio\programacao\C++\SistemaDeTCC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable SistemaDeTCC.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SistemaDeTCC.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
