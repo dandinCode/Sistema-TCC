@@ -1,9 +1,6 @@
 //
 // Created by Caio on 20/11/2022.
 //
-//
-// Created by Caio on 17/11/2022.
-//
 
 #include <iostream>
 #include <string>

@@ -21,30 +21,43 @@ void Menu::chooseOption() {
 void Menu::valideOption(int option) {
     TCC newTCC;
     if(option == 1){
-        Register newRegister;
-        newRegister.tccRegister();
+        tccRegister();
     } else if(option == 2){
         if (newTCC.listSize() != 0) {
-            View newView;
-            newView.chooseOption();
+            tccView();
         } else {
             cout << "Nenhum TCC cadastrado ainda!" << endl;
         }
     } else if(option == 3){
         if (newTCC.listSize() != 0) {
-            Update newUpdate;
-            newUpdate.chooseOption();
+            tccUpdate();
         } else {
             cout << "Nenhum TCC cadastrado ainda!" << endl;
         }
     } else if(option == 4){
         if (newTCC.listSize() != 0) {
-            Delete newDelete;
-            newDelete.selectTCC();
+            tccDelete();
         } else {
             cout << "Nenhum TCC cadastrado ainda!" << endl;
         }
     } else {
         cout << "Opcao inexistente!" << endl;
     }
+}
+
+void Menu::tccRegister(){
+    Register newRegister;
+    newRegister.tccRegister();
+}
+void Menu::tccView(){
+    View newView;
+    newView.chooseOption();
+}
+void Menu::tccUpdate() {
+    Update newUpdate;
+    newUpdate.chooseOption();
+}
+void Menu::tccDelete(){
+    Delete newDelete;
+    newDelete.selectTCC();
 }

@@ -10,16 +10,13 @@
 #include "Data/TCC.h"
 
 class RegistrationsHistory {
-private:
-    int TccNumber = 0;
 public:
     void addInHistory(TCC tcc);
-    void addStudent(TCC tcc);
-    void addAdvisor(TCC tcc);
-    void addFrequency(TCC tcc);
-    void addEvaluator(TCC tcc);
-    void addDetails(TCC tcc);
-    void viewTotalRecords();
+    void addStudent(TCC tcc, ofstream& file);
+    void addAdvisor(TCC tcc, ofstream& file);
+    void addFrequency(TCC tcc, ofstream& file);
+    void addEvaluator(TCC tcc, ofstream& file);
+    void addDetails(TCC tcc, ofstream& file);
 };
 
 

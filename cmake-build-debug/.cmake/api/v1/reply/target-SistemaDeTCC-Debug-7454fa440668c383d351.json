@@ -153,13 +153,6 @@
 				24,
 				26
 			]
-		},
-		{
-			"name" : "",
-			"sourceIndexes" : 
-			[
-				27
-			]
 		}
 	],
 	"sources" : 
@@ -312,11 +305,6 @@
 			"backtrace" : 1,
 			"path" : "RegistrationsHistory.h",
 			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "RegistrationsHistory.txt",
-			"sourceGroupIndex" : 2
 		}
 	],
 	"type" : "EXECUTABLE"
