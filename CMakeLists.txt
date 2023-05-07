@@ -33,4 +33,4 @@ add_executable(SistemaDeTCC
         CRUD/View.h
         RegistrationsHistory.cpp
         RegistrationsHistory.h
-        RegistrationsHistory.txt)
+        )

@@ -164,9 +164,6 @@
 		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/RegistrationsHistory.h">
 			<Option target="SistemaDeTCC"/>
 		</Unit>
-		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/RegistrationsHistory.txt">
-			<Option target="SistemaDeTCC"/>
-		</Unit>
 		<Unit filename="C:/Users/Caio/programacao/C++/SistemaDeTCC/main.cpp">
 			<Option target="SistemaDeTCC"/>
 		</Unit>
