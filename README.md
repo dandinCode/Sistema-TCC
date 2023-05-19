@@ -1,5 +1,5 @@
 # SistemaDeTCC
-Sistema de manipulação de bancas de TCC feito com POO em C++. O sistema permite o cadastramento, a exibição, a edição (atualização) e a exclusão de indeterminadas bancas de TCC. Feito com o objetivo único de praticar programação e principalmente POO.
+Sistema de manipulação de bancas de TCC feito com POO em C++. O sistema permite o cadastramento, a exibição, a edição (atualização) e a exclusão de indeterminadas bancas de TCC. Feito com o objetivo único de praticar programação, principalmente POO, CleanCode e manipulação de dados com JSON.
 
 
 Uso:  
