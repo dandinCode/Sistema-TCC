@@ -32,9 +32,6 @@ void Update::valideOption(int option, json& jsonData, string title, ManipulateJs
         editEvaluator(jsonData, title, manipulateJson);
     } else if(option == 5){
         editDetails(jsonData, title, manipulateJson);
-    } else if (option == 0){
-        Menu menu;
-        menu.chooseOption();
     } else {
         cout << "Opcao inexistente!" << endl;
     }
@@ -43,14 +40,20 @@ void Update::valideOption(int option, json& jsonData, string title, ManipulateJs
 void Update::editJsonFile(int option){
     Search search;
     ManipulateJson manipulateJson;
-    string title = search.selectTitle();
     json jsonData = getJsonArray();
 
-    if(search.valideSearch(title)){
-        valideOption(option, jsonData, title, manipulateJson);
+    if (option !=0) {
+        string title = search.selectTitle();
+        if(search.valideSearch(title)){
+            valideOption(option, jsonData, title, manipulateJson);
+        } else{
+            cout << "TCC inexistente!" << endl;
+        }
     }   else{
-        cout << "TCC inexistente!" << endl;
+        Menu menu;
+        menu.chooseOption();
     }
+
 
 
     ofstream outFile("../JSON/tccDATA.json");
